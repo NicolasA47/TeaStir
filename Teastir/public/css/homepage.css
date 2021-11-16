@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+:root{
+    --primary: #433C37;
+    --secondary: #E3E4C8;
+}
+*{
+    font-family: Poppins;
+    color: var(--primary);
+}
+
+body{
+    background: var(--secondary);
+}
+
+
+.banner{
+    background: var(--primary);
+    border-radius: 0px 0px 40% 40%;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+}
+.cta-caption{
+    text-align: center;
+    margin-top: 55px;
+   
+}
+
+.cta-text{
+    text-shadow: 1px 2px rgba(0,0,0,0.2); 
+}
+.cta-image{
+    text-align: center;
+    padding: 50px 0px 100px 0px;
+}
+.cta-btn{
+    text-align: center;
+    font-size: 1.5em;
+    background: var(--primary);
+    width: 12em;
+    padding: 5px;
+    border-radius: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+    border: none;
+}
+
+.cta-btn:hover{
+    background: var(--secondary);
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.589);  
+    transition: background 0.25s, box-shadow 0.25s;
+}
+.cta-btn-text:hover{
+    color: var(--primary);
+    transition: color 1s;
+}
+
+.cta-btn-div{
+    text-align: center;
+}
+
+.cta-btn-text{
+    color: var(--secondary);
+    margin-bottom: 0px;
+}
+
+
+#logo{
+    width: 200px;
+    padding: 15px 20px 5px 20px;
+}
+
+#teacup{
+    width: 30em;
+    padding-top: 20px;
+}
