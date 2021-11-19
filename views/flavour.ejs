@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="../Images/TeaStirLogo.svg" alt="TeaStir" id="logo">
+    </div>
+    <div class="cta-caption">
+        <h1 class="cta-text">Tea By Type</h1>
+    </div>
+    <!-- Survey based on flavours -->
+    <!-- This form will collect user's inputs of their preferences in the form of radios -->
+    <!-- When the user hit the "Next" button, the form will get submitted by the method of post -->
+    <!-- Then, users will continue with the last servey page and which will be about caffeine -->
+    <form class="form p-2" action="/flavour" method="POST">
+        <table class="cta-btn-table">
+            <tr>
+                <th>
+                    <!-- Chai & corresponding choices -->
+                    <h3 class="cta-text"> Chai </h3>
+                </th>
+                <th>
+                    <input type="radio" name="chai" value="love">Love
+                    <input type="radio" name="chai" value="like">Like
+                    <input type="radio" name="chai" value="not_sure">Not Sure
+                    <input type="radio" name="chai" value="dislike">Dislike
+                    <input type="radio" name="chai" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <!-- Pumpkin & corresponding choices -->
+                    <h3 class="cta-text"> Pumpkin </h3>
+                </th>
+                <th>
+                    <input type="radio" name="pumpkin" value="love">Love
+                    <input type="radio" name="pumpkin" value="like">Like
+                    <input type="radio" name="pumpkin" value="not_sure">Not Sure
+                    <input type="radio" name="pumpkin" value="dislike">Dislike
+                    <input type="radio" name="pumpkin" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <!-- Earl Grey & corresponding choices -->
+                    <h3 class="cta-text"> Earl Grey </h3>
+                </th>
+                <th>
+                    <input type="radio" name="earl-grey" value="love">Love
+                    <input type="radio" name="earl-grey" value="like">Like
+                    <input type="radio" name="earl-grey" value="not_sure">Not Sure
+                    <input type="radio" name="earl-grey" value="dislike">Dislike
+                    <input type="radio" name="earl-grey" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Coffee </h3>
+                </th>
+                <th>
+                    <input type="radio" name="coffee" value="love">Love
+                    <input type="radio" name="coffee" value="like">Like
+                    <input type="radio" name="coffee" value="not_sure">Not Sure
+                    <input type="radio" name="coffee" value="dislike">Dislike
+                    <input type="radio" name="coffee" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Chocolate </h3>
+                </th>
+                <th>
+                    <input type="radio" name="chocolate" value="love">Love
+                    <input type="radio" name="chocolate" value="like">Like
+                    <input type="radio" name="chocolate" value="not_sure">Not Sure
+                    <input type="radio" name="chocolate" value="dislike">Dislike
+                    <input type="radio" name="chocolate" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Berries </h3>
+                </th>
+                <th>
+                    <input type="radio" name="berries" value="love">Love
+                    <input type="radio" name="berries" value="like">Like
+                    <input type="radio" name="berries" value="not_sure">Not Sure
+                    <input type="radio" name="berries" value="dislike">Dislike
+                    <input type="radio" name="berries" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Ming </h3>
+                </th>
+                <th>
+                    <input type="radio" name="mint" value="love">Love
+                    <input type="radio" name="mint" value="like">Like
+                    <input type="radio" name="mint" value="not_sure">Not Sure
+                    <input type="radio" name="mint" value="dislike">Dislike
+                    <input type="radio" name="mint" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Vanilla </h3>
+                </th>
+                <th>
+                    <input type="radio" name="vanilla" value="love">Love
+                    <input type="radio" name="vanilla" value="like">Like
+                    <input type="radio" name="vanilla" value="not_sure">Not Sure
+                    <input type="radio" name="vanilla" value="dislike">Dislike
+                    <input type="radio" name="vanilla" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Natural </h3>
+                </th>
+                <th>
+                    <input type="radio" name="natural" value="love">Love
+                    <input type="radio" name="natural" value="like">Like
+                    <input type="radio" name="natural" value="not_sure">Not Sure
+                    <input type="radio" name="natural" value="dislike">Dislike
+                    <input type="radio" name="natural" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Unflavoured </h3>
+                </th>
+                <th>
+                    <input type="radio" name="unflavoured" value="love">Love
+                    <input type="radio" name="unflavoured" value="like">Like
+                    <input type="radio" name="unflavoured" value="not_sure">Not Sure
+                    <input type="radio" name="unflavoured" value="dislike">Dislike
+                    <input type="radio" name="unflavoured" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Stevia-free teas </h3>
+                </th>
+                <th>
+                    <input type="radio" name="stevia-free" value="love">Love
+                    <input type="radio" name="stevia-free" value="like">Like
+                    <input type="radio" name="stevia-free" value="not_sure">Not Sure
+                    <input type="radio" name="stevia-free" value="dislike">Dislike
+                    <input type="radio" name="stevia-free" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Citrus </h3>
+                </th>
+                <th>
+                    <input type="radio" name="citrus" value="love">Love
+                    <input type="radio" name="citrus" value="like">Like
+                    <input type="radio" name="citrus" value="not_sure">Not Sure
+                    <input type="radio" name="citrus" value="dislike">Dislike
+                    <input type="radio" name="citrus" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Ginger </h3>
+                </th>
+                <th>
+                    <input type="radio" name="ginger" value="love">Love
+                    <input type="radio" name="ginger" value="like">Like
+                    <input type="radio" name="ginger" value="not_sure">Not Sure
+                    <input type="radio" name="ginger" value="dislike">Dislike
+                    <input type="radio" name="ginger" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Hibiscus </h3>
+                </th>
+                <th>
+                    <input type="radio" name="hibiscus" value="love">Love
+                    <input type="radio" name="hibiscus" value="like">Like
+                    <input type="radio" name="hibiscus" value="not_sure">Not Sure
+                    <input type="radio" name="hibiscus" value="dislike">Dislike
+                    <input type="radio" name="hibiscus" value="hate">Hate
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 class="cta-text"> Jasmine </h3>
+                </th>
+                <th>
+                    <input type="radio" name="jasmine" value="love">Love
+                    <input type="radio" name="jasmine" value="like">Like
+                    <input type="radio" name="jasmine" value="not_sure">Not Sure
+                    <input type="radio" name="jasmine" value="dislike">Dislike
+                    <input type="radio" name="jasmine" value="hate">Hate
+                </th>
+            </tr>
+
+        </table>
+        <div class="cta-btn-div">
+            <button class="cta-btn" type="submit">
+                <p class="cta-btn-text">Next</p>
+            </button>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
