@@ -15,11 +15,23 @@
 
 
 ---
-### How to Run Our Project
->## Start By Cloning Our Repository
+## How to Run Our Project
+>### Start By Cloning Our Repository
 >>1. Click the green code button in the top right and copy the https link
 >>2. Open your terminal of choice and navigate to the directory you would like to have the project download in.
 >>3. Type the command ``` git clone https://github.com/NicolasA47/TeaStir.git ```
+>>4. Make sure you have Node.js & MongoDB installed
+>>> - [How To Install Node.js](https://www.pluralsight.com/guides/getting-started-with-nodejs)
+>>> -  [Install MongoDB](https://www.mongodb.com/try/download/community)
+>>5. Navigate to the project directory ./Teasitr
+>>6. Enter the following commands 
+>>> - ``` npm init ```
+>>> - ``` npm i express ejs mongoose ```
+>>7. Start by running the build database file with: ```node buildDb.js``` then exit out of the process with 'CTRL' + 'C' 
+>>8. Procced by navigating into project code directory with ```cd ProjectCode/```
+>>9. Run the project with ```node app.js```
+>>10. open a browser and go to http://localhost:2000 
+ 
 
 
 
