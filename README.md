@@ -17,8 +17,9 @@
 ---
 ### How to Run Our Project
 >## Start By Cloning Our Repository
->>1. 
->> ![Clone Repository](TeaStir\ProjectCode\public\Images\teastir_demo1.png)
+>>1. Click the green code button in the top right and copy the https link
+>>2. Open your terminal of choice and navigate to the directory you would like to have the project download in.
+>>3. Type the command ``` git clone https://github.com/NicolasA47/TeaStir.git ```
 
 
 
