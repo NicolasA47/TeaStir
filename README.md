@@ -14,6 +14,13 @@
 > 3. [TeaStir Vlog 3](https://youtu.be/LCViuxVRcPg)
 
 
+---
+### How to Run Our Project
+>## Start By Cloning Our Repository
+>>1. 
+>> ![Clone Repository](TeaStir\ProjectCode\public\Images\teastir_demo1.png)
+
+
 
 
 

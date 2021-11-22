@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+:root{
+    --primary: #433C37;
+    --secondary: #E3E4C8;
+}
+*{
+    font-family: Poppins;
+    color: var(--primary);
+}
+
+body{
+    background: var(--secondary);
+}
+
+input{
+    color: var(--primary);
+    background: var(--primary);
+}
+
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #c7c8b4;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background: var(--primary);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.banner{
+    background: var(--primary);
+    border-radius: 0px 0px 40% 40%;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+}
+.cta-caption{
+    text-align: center;
+    margin-top: 55px;
+   
+}
+
+.cta-text{
+    text-shadow: 1px 2px rgba(0,0,0,0.2); 
+}
+.cta-image{
+    text-align: center;
+    padding: 50px 0px 100px 0px;
+}
+.cta-btn{
+    text-align: center;
+    font-size: 1.5em;
+    background: var(--primary);
+    width: 12em;
+    padding: 5px;
+    border-radius: 1em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+    border: none;
+    color: var(--secondary);
+    margin-bottom: 0px;
+}
+
+.cta-btn:hover{
+    background: var(--secondary);
+    color: var(--primary);
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.589);  
+    transition: background 1s, box-shadow 1s;
+    
+}
+
+.cta-btn-div{
+    text-align: center;
+}
+
+
+
+
+
+#logo{
+    width: 200px;
+    padding: 15px 20px 5px 20px;
+}
+
+#teacup{
+    width: 30em;
+    padding-top: 20px;
+}
