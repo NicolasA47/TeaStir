@@ -117,7 +117,6 @@ body{
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
-    text-shadow: none;
   }
   
   .card__body p {
@@ -125,4 +124,9 @@ body{
     font-size: 18px;
     line-height: 1.4;
     text-shadow: none;
+
+  }
+
+  .match{
+    color: #6cb369
   }

@@ -92,7 +92,7 @@ AddTea("earl grey organic","Black","EarlGrey","High-Caffeination", "earl-grey-or
 //white type 
 AddTea("white pumpkin","White","Pumpkin","Low-Caffeination", "white-pumpkin.jpg", "tea/tea-by-flavour/white-pumpkin/10960DT01VAR0095948.html?cgid=by-flavors", "10.98","Delicate pumpkin with notes of cream, coconut and a whisper of spice");
 
-AddTea("merry mistletoe","White","Natural","Low-Caffeination", "merry mistletoe.jpg", "tea/tea-by-flavour/merry-mistletoe/10868DT01VAR0099330.html?cgid=by-flavors", "10.98","Tart cranberry with notes of baked apple and hints of warming clove & cinnamon.");
+AddTea("merry mistletoe","White","Natural","Low-Caffeination", "merry-mistletoe.jpg", "tea/tea-by-flavour/merry-mistletoe/10868DT01VAR0099330.html?cgid=by-flavors", "10.98","Tart cranberry with notes of baked apple and hints of warming clove & cinnamon.");
 
 AddTea("zen pearls organic","White","Jasmine","High-Caffeination", "zen-pearls-organic.jpg", "tea/tea-by-flavour/jasmine/organic-zen-pearls/10691DT01VAR0059833.html?cgid=jasmine-flavors", "19.98","A sweet jasmine flavour that’s delicate, floral and crisp");
 
@@ -127,7 +127,7 @@ AddTea("japanese sencha organic","Green","Stevia-Free","Medium-Caffeination", "j
 AddTea("jasmine ginger twist","Green","Organic","Medium-Caffeination", "jasmine-ginger-twist.jpg", "tea/tea-by-flavour/jasmine-ginger-twist/10894DT01VAR0089435.html?cgid=by-flavors", "8.98","Light-bodied blend of sweet & floral jasmine");
 // matcha drink mix
 
-AddTea("vanilla chai matcha","Matcha","Chai","Medium-Caffeination", "canilla-chai-matcha.jpg", "tea/tea-by-flavour/chai/vanilla-chai-matcha/10936DT01VAR0093611.html?cgid=chai-tea", "10.98","Notes of creamy vanilla and warm spices on a smooth matcha base");
+AddTea("vanilla chai matcha","Matcha","Chai","Medium-Caffeination", "vanilla-chai-matcha.jpg", "tea/tea-by-flavour/chai/vanilla-chai-matcha/10936DT01VAR0093611.html?cgid=chai-tea", "10.98","Notes of creamy vanilla and warm spices on a smooth matcha base");
 
 AddTea("chai matcha","Matcha","Chai","Medium-Caffeination", "chai-matcha.jpg", "tea/tea-by-flavour/chai/chai-matcha/10717DT01VAR0064036.html?cgid=chai-tea", "10.98","Reminiscent of a sweet chai latte with notes of cinnamon, nutmeg & cardamom on a Matcha Matsu base");
 

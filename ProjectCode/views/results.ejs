@@ -23,7 +23,7 @@
                 <div class="card__inner" id="<%=i%>">
                     <div class="card__face card__face--front">
                         <div>
-                            <h2 class="cta-text text-capitalize">Tea #<%=i+1%></h2>
+                            <h2 class="cta-text text-capitalize">Tea <%=i+1%></h2>
                             <input type="hidden" id="link-<%=i%>" value="<%=teaScores[i].tea.link%>">
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                                 <p><%=teaScores[i].tea.tastes%></p>
                             </div>
                             <div class="pb-3">
-                                <h3 class=""><%=teaScores[i].similarityScore%>% Match</h2>
+                                <h3 class="match"><%=teaScores[i].similarityScore%>% Match</h2>
                             </div>
                             <div>
                                 <button class="cta-btn" id="btn-<%=i%>" onclick="openInNewTab()">Purchase</button>
