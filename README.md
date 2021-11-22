@@ -22,15 +22,15 @@
 >>3. Type the command ``` git clone https://github.com/NicolasA47/TeaStir.git ```
 >>4. Make sure you have Node.js & MongoDB installed
 >>> - [How To Install Node.js](https://www.pluralsight.com/guides/getting-started-with-nodejs)
->>> -  [Install MongoDB](https://www.mongodb.com/try/download/community)
->>5. Navigate to the project directory ./Teasitr
+>>> - [Install MongoDB](https://www.mongodb.com/try/download/community)
+>>5. Navigate to the project directory with: ```cd TeaStir```
 >>6. Enter the following commands 
 >>> - ``` npm init ```
 >>> - ``` npm i express ejs mongoose ```
 >>7. Start by running the build database file with: ```node buildDb.js``` then exit out of the process with 'CTRL' + 'C' 
->>8. Procced by navigating into project code directory with ```cd ProjectCode/```
->>9. Run the project with ```node app.js```
->>10. open a browser and go to http://localhost:2000 
+>>8. Procced by navigating into project code directory with: ```cd ProjectCode/```
+>>9. Run the project with: ```node app.js```
+>>10. Open a browser and go to [http://localhost:2000](http://localhost:2000)
  
 
 
