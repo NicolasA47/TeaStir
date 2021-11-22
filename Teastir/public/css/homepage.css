@@ -12,6 +12,40 @@ body{
     background: var(--secondary);
 }
 
+input{
+    color: var(--primary);
+    background: var(--primary);
+}
+
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #c7c8b4;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background: var(--primary);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
 
 .banner{
     background: var(--primary);
@@ -41,26 +75,23 @@ body{
     border-radius: 1em;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
     border: none;
+    color: var(--secondary);
+    margin-bottom: 0px;
 }
 
 .cta-btn:hover{
     background: var(--secondary);
-    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.589);  
-    transition: background 0.25s, box-shadow 0.25s;
-}
-.cta-btn-text:hover{
     color: var(--primary);
-    transition: color 1s;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.589);  
+    transition: background 1s, box-shadow 1s;
+    
 }
 
 .cta-btn-div{
     text-align: center;
 }
 
-.cta-btn-text{
-    color: var(--secondary);
-    margin-bottom: 0px;
-}
+
 
 
 #logo{
