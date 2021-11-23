@@ -1,0 +1,15 @@
+.accordion{
+    width: 80%;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.err_msg{
+	color:red; 
+	text-decoration:underline;
+}
+
+table{
+    text-align: center;
+}
