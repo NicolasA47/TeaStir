@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/results.css">
     <link rel="stylesheet" href="css/homepage.css">
     <title>Home</title>
 </head>
-    <body>
-        <div class="banner">
-            <img src="../Images/TeaStirLogo.svg" alt="TeaStir" id="logo">
-        </div>
-        <div class="cta-caption">
-            <h1 class="cta-text">Click On The Cards To Reveal Them!</h1>   
-        </div>
-        <div class = "text-center">       
-        <% for(let i = 0; i < 3; i++) { %>
+
+<body>
+    <div class="banner">
+        <img src="../Images/TeaStirLogo.svg" alt="TeaStir" id="logo">
+    </div>
+    <div class="cta-btn-div">
+        <form class="form p-2" action="/getuser" method="POST">
+            <button class="cta-btn">Log in to save your recommendations!</button>
+        </form>
+    </div>
+    <div class="cta-caption top-right">
+        <h1 class="cta-text">Click On The Cards To Reveal Them!</h1>
+    </div>
+
+    <div class="text-center">
+        <% for(let i=0; i < 3; i++) { %>
             <div class="card d-inline-block m-lg-5">
                 <div class="card__inner" id="<%=i%>">
                     <div class="card__face card__face--front">
                         <div>
-                            <h2 class="cta-text text-capitalize">Tea <%=i+1%></h2>
+                            <h2 class="cta-text text-capitalize">Tea <%=i+1%>
+                            </h2>
                             <input type="hidden" id="link-<%=i%>" value="<%=teaScores[i].tea.link%>">
                         </div>
                     </div>
                     <div class="card__face card__face--back">
                         <div class="card__content">
-                            <div class ="card__header">
-                                <h2 class="cta-text fs-5 text-capitalize"><%=teaScores[i].tea.name%></h2>
+                            <div class="card__header">
+                                <h2 class="cta-text fs-5 text-capitalize">
+                                    <%=teaScores[i].tea.name%>
+                                </h2>
                                 <img class="pp" src="<%=teaScores[i].tea.imagePath%>" alt="">
                             </div>
                             <div class="card__body text-center">
-                                <p><%=teaScores[i].tea.tastes%></p>
+                                <p>
+                                    <%=teaScores[i].tea.tastes%>
+                                </p>
                             </div>
                             <div class="pb-3">
-                                <h3 class="match"><%=teaScores[i].similarityScore%>% Match</h2>
+                                <h3 class="match">
+                                    <%=teaScores[i].similarityScore%>% Match</h2>
                             </div>
                             <div>
                                 <button class="cta-btn" id="btn-<%=i%>" onclick="openInNewTab()">Purchase</button>
@@ -46,9 +63,10 @@
                     </div>
                 </div>
             </div>
-        <% } %>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    </body>
-    <script src="js/results.js"></script>
+            <% } %>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+<script src="js/results.js"></script>
+
 </html>
