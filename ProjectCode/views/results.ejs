@@ -19,11 +19,6 @@
     <div class="banner">
         <img src="../Images/TeaStirLogo.svg" alt="TeaStir" id="logo">
     </div>
-    <div class="cta-btn-div">
-        <form class="form p-2" action="/getuser" method="POST">
-            <button class="cta-btn">Log in to save your recommendations!</button>
-        </form>
-    </div>
     <div class="cta-caption top-right">
         <h1 class="cta-text">Click On The Cards To Reveal Them!</h1>
     </div>
@@ -53,8 +48,9 @@
                                 </p>
                             </div>
                             <div class="pb-3">
-                                <h3 class="match">
-                                    <%=teaScores[i].similarityScore%>% Match</h2>
+                                <h3 class="match" id="score-<%=i%>" name="<%=teaScores[i].similarityScore%>">
+                                    0% Match
+                                </h2>
                             </div>
                             <div>
                                 <button class="cta-btn" id="btn-<%=i%>" onclick="openInNewTab()">Purchase</button>
@@ -65,6 +61,11 @@
             </div>
             <% } %>
     </div>
+    <!-- <div class="m-auto text-center">
+        <form class="form p-2" action="/getuser" method="POST">
+            <button class="cta-btn">Sign Up To Save Your Results</button>
+        </form>
+    </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 <script src="js/results.js"></script>
