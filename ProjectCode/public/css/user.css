@@ -12,11 +12,6 @@ body{
     background: var(--secondary);
 }
 
-input{
-    color: var(--primary);
-    background: var(--primary);
-}
-
 input[type='radio']:after {
     width: 15px;
     height: 15px;
@@ -98,3 +93,18 @@ input[type='radio']:checked:after {
     padding-top: 20px;
 }
 
+.accordion{
+    width: 80%;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.err_msg{
+	color:red; 
+	text-decoration:underline;
+}
+
+table{
+    text-align: center;
+}
